@@ -6,17 +6,22 @@
   --color-body: #918ca4;
 }
 
-/* Typography*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
+/* Typography*/
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
   color: var(--color-body);
-  line-height: 1.5;
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
+  line-height: 1.5;
 }
 
 h1,
@@ -61,16 +66,15 @@ p {
 }
 
 /*Links*/
-
 a {
   text-decoration: none;
 }
 
 .link-arrow {
   color: var(--color-accent);
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -90,7 +94,6 @@ a {
 }
 
 /* badges */
-
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -123,11 +126,10 @@ a {
 }
 
 /* lists */
-
 .list {
+  color: var(--color-headings);
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -141,8 +143,8 @@ a {
 }
 
 .list--tick .list__item {
-  padding-left: 0.5rem;
   margin-bottom: 1rem;
+  padding-left: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -150,6 +152,89 @@ a {
     padding-left: 0;
   }
 }
+
+/* icons */
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  align-items: center;
+  background: #f3f9fa;
+  border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+
+/* buttons */
+.btn {
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  border: 0;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #3a8ffd;
+}
+
+.btn--secondary {
+  border: 0;
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background-color: #00c8eb;
+}
+
+.btn--accent {
+  border: 0;
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background-color: #ec3000;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn--outline {
+  background-color: #fff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
 
 /* inputs */
 
