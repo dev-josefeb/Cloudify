@@ -95,7 +95,7 @@ a {
   }
 }
 
-/* badges */
+/* Badges */
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -127,7 +127,7 @@ a {
   }
 }
 
-/* lists */
+/* Lists */
 .list {
   color: var(--color-headings);
   list-style: none;
@@ -155,7 +155,7 @@ a {
   }
 }
 
-/* icons */
+/* Icons */
 
 .icon {
   height: 40px;
@@ -176,7 +176,7 @@ a {
   width: 64px;
 }
 
-/* buttons */
+/* Buttons */
 .btn {
   border-radius: 40px;
   cursor: pointer;
@@ -241,9 +241,9 @@ a {
   }
 }
 
-/* inputs */
+/* Inputs */
 
-input {
+.input {
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   color: var(--color-headings);
@@ -277,4 +277,26 @@ input {
   input {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
 }
