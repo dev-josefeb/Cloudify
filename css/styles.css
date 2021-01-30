@@ -894,3 +894,7 @@ a {
     font-size: 1.6rem;
   }
 }
+
+.nav__logo {
+  width: 100%;
+}
