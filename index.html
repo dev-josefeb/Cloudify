@@ -23,7 +23,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a href="/"><img class="nav__logo" src="images/logo.png" alt="" /></a>
+        <a aria-label="Cloudify" href="/"
+          ><img class="nav__logo" src="images/logo.png" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
@@ -64,6 +66,7 @@
       </header>
       <div class="input-group">
         <input
+          aria-label="Domain"
           type="text"
           class="input"
           placeholder="Enter domain name here..."
